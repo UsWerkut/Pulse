@@ -1,0 +1,215 @@
+.catalog {
+    padding-bottom: 100px;
+
+    .title {
+        font-size: 30px;
+        color: #0d0d0d;
+        text-align: center;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 69px;
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__tab {
+        margin: 0 5px;
+        width: 220px;
+        height: 50px;
+        transform: skew(338deg);
+        border: 2px solid #d0d0d0;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #6b6b6b;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+
+        div {
+            transform: skew(22deg);
+        }
+
+        &_active {
+            background-color: $main-color;
+            border: none;
+            color: #ffffff;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 6px;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        &_active {
+            display: flex;
+        }
+    }
+
+    &-item {
+        width: 300px;
+        height: 440px;
+        border: 2px solid #e8e8e8;
+        padding: 20px;
+        overflow: hidden;
+        margin-bottom: 20px;
+
+        &__img {
+            display: block;
+            max-width: 100%;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        &__subtitle,
+        &__descr,
+        &__link {
+            margin-top: 15px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0d0d0d;
+        }
+
+        &__descr {
+            font-size: 14px;
+            font-weight: 500;
+            color: #0d0d0d;
+        }
+
+        &__link {
+            position: relative;
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: $main-color;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        &__back {
+            position: absolute;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            bottom: 0;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: $main-color;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+
+        hr {
+            background-color: #e8e8e8;
+            margin: 19px 0 21px 0;
+        }
+
+        &__footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__old-price {
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            color: #555555;
+            text-decoration: line-through;
+        }
+
+        &__price {
+            margin-top: 3px;
+            font-size: 20px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: #050505;
+        }
+
+        &__wrapper {
+            display: flex;
+            width: calc(200% + 40px);
+            transition: .3s all;
+        }
+
+        &__content {
+            width: 50%;
+            margin-right: 20px;
+            transform: translateX(-110%);
+            transition: .3s;
+
+            &_active {
+                transform: translateX(0%);
+            }
+        }
+
+        &__list {
+            position: relative;
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            padding-left: 19px;
+            margin-bottom: 0;
+            list-style-type: none;
+            transition: .3s all;
+            
+            &_active {
+                margin-left: 0px;
+                transform: translateX(-100%);
+                transition: .3s all;
+            }
+
+            li {
+                position: relative;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 500;
+                color: #555555;
+                text-align-last: left;
+
+                &:nth-child(n+2) {
+                    margin-top: 20px;
+                }
+
+                &::before {
+                    content: '';
+                    width: 5px;
+                    position: absolute;
+                    height: 5px;
+                    background-color: $main-color;
+                    left: -14px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}

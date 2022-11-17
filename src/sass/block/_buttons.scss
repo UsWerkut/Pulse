@@ -1,0 +1,41 @@
+.button {
+    width: 150px;
+    height: 30px;
+    background-color: $main-color;
+    border-radius: 5px;
+    border: none;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.555) 0px 1px 4px;
+    }
+
+    &_header {
+        margin-top: 4px;
+    }
+
+    &_main {
+        margin-top: 67px;
+        width: 300px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    &_form {
+        margin-top: 20px;
+        width: 300px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    &_mini {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px;
+    }
+}
