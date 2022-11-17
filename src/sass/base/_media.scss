@@ -10,6 +10,30 @@
     }
 }
 
+@media (max-width: 923px) {
+    
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+
+        &-item {
+            &:nth-child(odd) {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 623px) {
+    .catalog {
+        &-item {
+            &:nth-child(odd) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 870px) {
     .carousel {
         &__inner {
@@ -31,6 +55,10 @@
 }
 
 @media (max-width: 576px) {
+    ul {
+        margin-bottom: 0;
+        padding-left: 0;
+    }
     .button_main {
         margin-top: 45px;
         width: 180px;
@@ -40,7 +68,8 @@
     .promo {
         background: url(../images/bg/first_bg.png) -290px center/cover no-repeat;
         min-height: 570px;
-
+        padding: 21px 0 10px 0;
+        
         .header {
             justify-content: space-around;
             flex-wrap: wrap;
@@ -74,7 +103,9 @@
         }
 
         &__header {
-            font-size: 22px;
+            font-size: 23px;
+            line-height: 0;
+            margin-top: 42px;
         }
 
         &__subheader {
@@ -84,7 +115,7 @@
 
         &__icons {
             justify-content: space-evenly;
-            margin-top: 45px;
+            margin-top: 120px;
             min-width: 300px;
             width: 100%;
         }
@@ -154,6 +185,26 @@
                 font-size: 14px;
                 max-width: 100%;
             }
+        }
+    }
+
+    .catalog {
+        &__tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 14px;
+            margin: 0 3px;
+            &:last-child {
+                div {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        &__tabs {
+            margin-top: 20px;
         }
     }
 }
