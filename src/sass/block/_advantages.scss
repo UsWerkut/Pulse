@@ -46,4 +46,8 @@
             color: #ff0000;
         }
     }
+
+    &_heart {
+        animation: heartbeat 1.3s infinite;
+    }
 }

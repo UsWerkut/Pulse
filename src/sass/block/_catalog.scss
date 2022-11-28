@@ -181,7 +181,7 @@
             margin-bottom: 0;
             list-style-type: none;
             transition: .3s all;
-            
+
             &_active {
                 margin-left: 0px;
                 transform: translateX(-100%);
@@ -209,6 +209,14 @@
                     left: -14px;
                     top: 5px;
                 }
+            }
+        }
+
+        &__back {
+            &_active {
+                margin-left: 0px;
+                transform: translateX(-100%);
+                transition: .3s all;
             }
         }
     }

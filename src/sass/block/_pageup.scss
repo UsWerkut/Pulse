@@ -1,0 +1,10 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    img {
+        max-width: 40px;
+    }
+    scroll-behavior: smooth;
+}

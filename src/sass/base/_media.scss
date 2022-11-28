@@ -233,4 +233,36 @@
             box-shadow: none
         }
     }
+
+    .modal {
+        padding: 40px;
+        width: 90%;
+        max-width: 380px;
+        &__close {
+            top: 5px;
+            right: 5px;
+        }
+        
+        
+        .feed-form {
+            input {
+                max-width: 100%;
+            }
+
+            .button_form {
+                font-size: 14px;
+                max-width: 100%;
+            }
+
+        }
+
+    }
+
+    .pageup {
+        bottom: 15px;
+        right: 15px;
+        img {
+            max-width: 30px;
+        }
+    }
 }

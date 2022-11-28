@@ -12,6 +12,10 @@
     margin: 0 auto;
 }
 
+iframe {
+    width: 100%
+}
+
 
 
 @import 'block/titles';
@@ -25,5 +29,8 @@
 @import 'block/catalog';
 @import 'block/comment';
 @import 'block/footer';
+@import 'block/modal';
+@import 'block/pageup';
 
+@import 'base/animations';
 @import 'base/media';
