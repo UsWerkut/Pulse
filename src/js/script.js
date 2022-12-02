@@ -3,8 +3,8 @@
 $(document).ready(function () {
   $('.carousel__inner').slick({
     speed: 800,
-    prevArrow: '<button type="button" class="slick_prev"><img src="images/icons/Arrow_left.png"></button>',
-    nextArrow: '<button type="button" class="slick_next"><img src="images/icons/Arrow_right.png"></button>',
+    prevArrow: '<button type="button" class="slick_prev"><img src="images/icons/Arrow_left.png" alt="left"></button>',
+    nextArrow: '<button type="button" class="slick_next"><img src="images/icons/Arrow_right.png" alt="right"></button>',
     responsive: [
       {
         breakpoint: 992,
